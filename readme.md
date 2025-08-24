@@ -66,7 +66,15 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
-## Autenticação do Google Cloud
+## Implantação no Google Cloud Run
+
+Com o `Dockerfile` no projeto, você pode fazer a implantação diretamente do seu código-fonte.
+
+1. **Autentique-se no gcloud:**
  - gcloud auth login
+
+2. **Configure seu projeto:**
  - gcloud config set project [id_project]
- - gcloud run deploy --port=8000 # 
+
+3. **Execute o comando de deploy:**
+ - gcloud run deploy ellis --source . --port 8000 --allow-unauthenticated
