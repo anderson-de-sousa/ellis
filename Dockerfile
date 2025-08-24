@@ -30,4 +30,4 @@ EXPOSE 8000
 # Comando para iniciar a aplicação.
 # Usar 0.0.0.0 torna a aplicação acessível de fora do contêiner.
 # O comando padrão não inclui --reload, que é mais adequado para o ambiente de desenvolvimento.
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
